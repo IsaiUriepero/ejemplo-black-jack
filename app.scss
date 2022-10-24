@@ -1,0 +1,131 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  font-family: $body-font-family;
+  line-height: 1.2em;
+  margin: 1em;
+}
+
+h1 {
+  color: $color-gray-05;
+  font-family: $header-font-family;
+  font-weight: 200;
+  font-size: 3em;
+}
+
+h2 {
+  color: $white;
+  font-family: $header-font-family;
+  font-weight: 200;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  margin-bottom: .2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+button {
+  background: $color-gray-02;
+  color: $color-gray-05;
+  padding: 1em;
+  border-radius: .3em;
+  border:none;
+  font-size:1em;
+}
+
+.header {
+  display:flex;
+  align-items:center;
+  padding-bottom:.2em;
+  
+  .suits {
+    display:flex;
+    font-size: 2em;
+    padding-left:1em;    
+    align-items:center;
+
+    div {
+      border: solid 1px $color-gray-02;
+      border-radius: .1em;
+      padding: .6em .2em;
+      margin-right: .1em;
+      background:$white;
+    }
+  }
+}
+
+.deck-area {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top:1em;
+}
+
+.card {
+  border: solid 1px $color-gray-02;
+  border-radius: .1em;
+  padding: .6em .5em;
+  margin-right: .1em;
+  background:$white;
+  text-align:center;
+  line-height: 1.3em;
+  font-size: 1.5em;
+  
+  color: $color-gray-05;
+  
+  .value {
+    color: $color-gray-05;
+    font-weight:500;
+    font-family: $header-font-family;
+  }
+}
+
+.dealt-cards {
+  display: flex;
+  margin-top:1em;
+}
+
+
+
+.hearts {
+  
+  &:before {
+    content: $hearts;
+    color: $red;
+  }
+}
+.diamonds {
+  
+  &:before {
+    content: $diamonds;
+    color: $red;
+  }
+}
+
+.spades {
+  
+  &:before {
+    content: $spades;
+    color: $black;
+  }
+}
+
+.clubs {
+  
+  &:before {
+    content: $clubs;
+    color: $black;
+  }
+}
+
+.table {
+  background-color:$green;
+  border: solid 3px $black;
+  border-radius: .5em;
+  padding: 1.5em;
+  color: $white;
+  margin-top:1em;
+}

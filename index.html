@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/styles.processed.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Abel|Oswald:200,500" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>JavaScript BlackJack</h1>
+      <div class="suits">
+        <div class="hearts"></div>
+        <div class="spades"></div>
+        <div class="diamonds"></div>
+        <div class="clubs"></div>
+      </div>
+    </div>
+    
+    <div class="table">
+      <div id="intro"><h2>Welcome to BlackJack!</h2></div>
+      <p id="text-area">Let's play a game</p>
+      
+      <div id="dealer-cards" class="dealt-cards"></div>
+      <div id="dealer-score"></div>
+      <div id="player-cards" class="dealt-cards"></div>
+      <div id="player-score"></div>
+      
+      <button id="new-game-button"><i class="fas fa-play"></i> New Game!</button>
+      <button id="hit-button" class="hit-button"><i class="fas fa-hammer"></i> Hit!</button>
+      <button id="stay-button" class="stay-button"><i class="fas fa-hand-paper"></i> Stay</button>
+    </div>
+    <div id="deck" class="deck-area"></div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>

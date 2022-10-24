@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  line-height: 1.2em;
+  margin: 1em;
+}
+
+h1 {
+  color: #595959;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  margin-bottom: .2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+button {
+  background: #e4e4e4;
+  color: #595959;
+  padding: 1em;
+  border-radius: .3em;
+  border: none;
+  font-size: 1em;
+}
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: .2em;
+}
+
+.header .suits {
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2em;
+  padding-left: 1em;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.header .suits div {
+  border: solid 1px #e4e4e4;
+  border-radius: .1em;
+  padding: .6em .2em;
+  margin-right: .1em;
+  background: #ffffff;
+}
+
+.deck-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 1em;
+}
+
+.card {
+  border: solid 1px #e4e4e4;
+  border-radius: .1em;
+  padding: .6em .5em;
+  margin-right: .1em;
+  background: #ffffff;
+  text-align: center;
+  line-height: 1.3em;
+  font-size: 1.5em;
+  color: #595959;
+}
+
+.card .value {
+  color: #595959;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+
+.dealt-cards {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+.hearts:before {
+  content: "♥";
+  color: red;
+}
+
+.diamonds:before {
+  content: "♦";
+  color: red;
+}
+
+.spades:before {
+  content: "♠";
+  color: #000000;
+}
+
+.clubs:before {
+  content: "♣";
+  color: #000000;
+}
+
+.table {
+  background-color: #477148;
+  border: solid 3px #000000;
+  border-radius: .5em;
+  padding: 1.5em;
+  color: #ffffff;
+  margin-top: 1em;
+}
